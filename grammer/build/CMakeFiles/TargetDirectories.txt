@@ -1,0 +1,3 @@
+/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/demo.dir
+/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/edit_cache.dir
+/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/rebuild_cache.dir
