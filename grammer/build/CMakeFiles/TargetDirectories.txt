@@ -1,3 +1,5 @@
-/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/demo.dir
+/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/ReactorDemo.dir
+/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/ProactorDemo.dir
+/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/Friend.dir
 /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/edit_cache.dir
 /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles/rebuild_cache.dir

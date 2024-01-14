@@ -117,41 +117,115 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo
+# Target rules for targets named ReactorDemo
 
 # Build rule for target.
-demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo
-.PHONY : demo
+ReactorDemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ReactorDemo
+.PHONY : ReactorDemo
 
 # fast build rule for target.
-demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-.PHONY : demo/fast
+ReactorDemo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/build
+.PHONY : ReactorDemo/fast
 
-src/demo.o: src/demo.cpp.o
-.PHONY : src/demo.o
+#=============================================================================
+# Target rules for targets named ProactorDemo
+
+# Build rule for target.
+ProactorDemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProactorDemo
+.PHONY : ProactorDemo
+
+# fast build rule for target.
+ProactorDemo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/build
+.PHONY : ProactorDemo/fast
+
+#=============================================================================
+# Target rules for targets named Friend
+
+# Build rule for target.
+Friend: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Friend
+.PHONY : Friend
+
+# fast build rule for target.
+Friend/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/build
+.PHONY : Friend/fast
+
+src/ProactorDemo.o: src/ProactorDemo.cpp.o
+.PHONY : src/ProactorDemo.o
 
 # target to build an object file
-src/demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.o
-.PHONY : src/demo.cpp.o
+src/ProactorDemo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/src/ProactorDemo.cpp.o
+.PHONY : src/ProactorDemo.cpp.o
 
-src/demo.i: src/demo.cpp.i
-.PHONY : src/demo.i
+src/ProactorDemo.i: src/ProactorDemo.cpp.i
+.PHONY : src/ProactorDemo.i
 
 # target to preprocess a source file
-src/demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.i
-.PHONY : src/demo.cpp.i
+src/ProactorDemo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/src/ProactorDemo.cpp.i
+.PHONY : src/ProactorDemo.cpp.i
 
-src/demo.s: src/demo.cpp.s
-.PHONY : src/demo.s
+src/ProactorDemo.s: src/ProactorDemo.cpp.s
+.PHONY : src/ProactorDemo.s
 
 # target to generate assembly for a file
-src/demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/demo.cpp.s
-.PHONY : src/demo.cpp.s
+src/ProactorDemo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/src/ProactorDemo.cpp.s
+.PHONY : src/ProactorDemo.cpp.s
+
+src/ReactorDemo.o: src/ReactorDemo.cpp.o
+.PHONY : src/ReactorDemo.o
+
+# target to build an object file
+src/ReactorDemo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/src/ReactorDemo.cpp.o
+.PHONY : src/ReactorDemo.cpp.o
+
+src/ReactorDemo.i: src/ReactorDemo.cpp.i
+.PHONY : src/ReactorDemo.i
+
+# target to preprocess a source file
+src/ReactorDemo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/src/ReactorDemo.cpp.i
+.PHONY : src/ReactorDemo.cpp.i
+
+src/ReactorDemo.s: src/ReactorDemo.cpp.s
+.PHONY : src/ReactorDemo.s
+
+# target to generate assembly for a file
+src/ReactorDemo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/src/ReactorDemo.cpp.s
+.PHONY : src/ReactorDemo.cpp.s
+
+src/friendFuncAndClass.o: src/friendFuncAndClass.cpp.o
+.PHONY : src/friendFuncAndClass.o
+
+# target to build an object file
+src/friendFuncAndClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/src/friendFuncAndClass.cpp.o
+.PHONY : src/friendFuncAndClass.cpp.o
+
+src/friendFuncAndClass.i: src/friendFuncAndClass.cpp.i
+.PHONY : src/friendFuncAndClass.i
+
+# target to preprocess a source file
+src/friendFuncAndClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/src/friendFuncAndClass.cpp.i
+.PHONY : src/friendFuncAndClass.cpp.i
+
+src/friendFuncAndClass.s: src/friendFuncAndClass.cpp.s
+.PHONY : src/friendFuncAndClass.s
+
+# target to generate assembly for a file
+src/friendFuncAndClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/src/friendFuncAndClass.cpp.s
+.PHONY : src/friendFuncAndClass.cpp.s
 
 # Help Target
 help:
@@ -161,10 +235,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... demo"
-	@echo "... src/demo.o"
-	@echo "... src/demo.i"
-	@echo "... src/demo.s"
+	@echo "... Friend"
+	@echo "... ProactorDemo"
+	@echo "... ReactorDemo"
+	@echo "... src/ProactorDemo.o"
+	@echo "... src/ProactorDemo.i"
+	@echo "... src/ProactorDemo.s"
+	@echo "... src/ReactorDemo.o"
+	@echo "... src/ReactorDemo.i"
+	@echo "... src/ReactorDemo.s"
+	@echo "... src/friendFuncAndClass.o"
+	@echo "... src/friendFuncAndClass.i"
+	@echo "... src/friendFuncAndClass.s"
 .PHONY : help
 
 

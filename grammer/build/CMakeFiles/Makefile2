@@ -63,7 +63,9 @@ CMAKE_BINARY_DIR = /Users/tsan1024/Data/code/cplusplus/grammer/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/demo.dir/all
+all: CMakeFiles/ReactorDemo.dir/all
+all: CMakeFiles/ProactorDemo.dir/all
+all: CMakeFiles/Friend.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +73,88 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/demo.dir/clean
+clean: CMakeFiles/ReactorDemo.dir/clean
+clean: CMakeFiles/ProactorDemo.dir/clean
+clean: CMakeFiles/Friend.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/demo.dir
+# Target rules for target CMakeFiles/ReactorDemo.dir
 
 # All Build rule for target.
-CMakeFiles/demo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles --progress-num=1,2 "Built target demo"
-.PHONY : CMakeFiles/demo.dir/all
+CMakeFiles/ReactorDemo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles --progress-num=5,6 "Built target ReactorDemo"
+.PHONY : CMakeFiles/ReactorDemo.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/demo.dir/rule: cmake_check_build_system
+CMakeFiles/ReactorDemo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/demo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ReactorDemo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles 0
-.PHONY : CMakeFiles/demo.dir/rule
+.PHONY : CMakeFiles/ReactorDemo.dir/rule
 
 # Convenience name for target.
-demo: CMakeFiles/demo.dir/rule
-.PHONY : demo
+ReactorDemo: CMakeFiles/ReactorDemo.dir/rule
+.PHONY : ReactorDemo
 
 # clean rule for target.
-CMakeFiles/demo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/clean
-.PHONY : CMakeFiles/demo.dir/clean
+CMakeFiles/ReactorDemo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReactorDemo.dir/build.make CMakeFiles/ReactorDemo.dir/clean
+.PHONY : CMakeFiles/ReactorDemo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ProactorDemo.dir
+
+# All Build rule for target.
+CMakeFiles/ProactorDemo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles --progress-num=3,4 "Built target ProactorDemo"
+.PHONY : CMakeFiles/ProactorDemo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ProactorDemo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProactorDemo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles 0
+.PHONY : CMakeFiles/ProactorDemo.dir/rule
+
+# Convenience name for target.
+ProactorDemo: CMakeFiles/ProactorDemo.dir/rule
+.PHONY : ProactorDemo
+
+# clean rule for target.
+CMakeFiles/ProactorDemo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProactorDemo.dir/build.make CMakeFiles/ProactorDemo.dir/clean
+.PHONY : CMakeFiles/ProactorDemo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Friend.dir
+
+# All Build rule for target.
+CMakeFiles/Friend.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles --progress-num=1,2 "Built target Friend"
+.PHONY : CMakeFiles/Friend.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Friend.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Friend.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tsan1024/Data/code/cplusplus/grammer/build/CMakeFiles 0
+.PHONY : CMakeFiles/Friend.dir/rule
+
+# Convenience name for target.
+Friend: CMakeFiles/Friend.dir/rule
+.PHONY : Friend
+
+# clean rule for target.
+CMakeFiles/Friend.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Friend.dir/build.make CMakeFiles/Friend.dir/clean
+.PHONY : CMakeFiles/Friend.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

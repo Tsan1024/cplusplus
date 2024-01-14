@@ -1,5 +1,6 @@
 #include <iostream>
 #include <boost/version.hpp>
+#include <thread>
 
 class EventHandler {
 public:
